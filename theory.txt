@@ -1,0 +1,41 @@
+ SQL - The language of Databases
+
+ SQL (Structured Query Language) is the language you use to talk to a database.
+ Every time you want to store, read, update or delete data you write SQL.
+
+ It's not a programming language like Python - it's a query language.
+ You describe what you want, not how to get it.
+
+ Database -> Excel but more powerful
+
+ Excel:
+ | Name    | Age | City    |
+ |---------|-----|---------|
+ | Sergiu  | 20  | Sibiu   |
+ | Alex    | 25  | Cluj    |
+
+ Database table - same idea, but:
+
+ - handles millions of rows
+ - multiple tables that relate to each other
+ - multiple users at the same time
+ - never loses data
+
+ Each table stores one type of thing. A real app has many tables:
+
+ users    -> stores user accounts
+ tasks    -> stores tasks
+ products -> stores products
+ orders   -> stores orders
+
+ Common data types:
+
+ Type -> What it stores -> Example
+
+ SERIAL -> Auto-increment integer -> 1,2,3...
+ INTEGER -> Whole number -> 25
+ VARCHAR(n) -> Text up to n chars -> "Hello"
+ TEXT -> Unlimited text -> long descriptions
+ BOOLEAN -> True/False -> true
+ TIMESTAMP -> Date and time -> 2025-03-24 10:00
+ DECIMAL -> Decimal number -> 19.99
