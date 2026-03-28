@@ -104,3 +104,23 @@ INSERT INTO tasks (title, user_id) VALUES ('Learn React', 2);
 SELECT users.name, tasks.title, tasks.completed
 FROM tasks
 JOIN users ON tasks.user_id = users.id;
+
+-- Result:
+
+-- name    | title       | completed
+-- --------|-------------|----------
+-- Sergiu  | Learn SQL   | false
+-- Sergiu  | Build API   | false
+-- Alex    | Learn React | false
+
+-- Types of JOIN:
+-- Type                What it returns
+-- JOIN/INNER JOIN     only rows that match in both tables
+-- LEFT JOIN           all rows from left table + matches from right
+-- RIGHT JOIN          all rows from right table + matches from left
+
+-- LEFT JOIN example
+-- shows ALL users even if they have no tasks
+SELECT users.name, tasks.title
+FROM users
+LEFT JOIN tasks ON tasks.user_id = users.id;
