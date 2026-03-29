@@ -3,6 +3,9 @@
  SQL (Structured Query Language) is the language you use to talk to a database.
  Every time you want to store, read, update or delete data you write SQL.
 
+ The word "query" comes from Latin quaere — "to ask/seek".
+  Every time you communicate with the database, whether reading, writing, updating or deleting — it's called a query.
+
  It's not a programming language like Python - it's a query language.
  You describe what you want, not how to get it.
 
@@ -39,3 +42,12 @@
  BOOLEAN -> True/False -> true
  TIMESTAMP -> Date and time -> 2025-03-24 10:00
  DECIMAL -> Decimal number -> 19.99
+
+
+ SQLAlchemy          PostgreSQL           DBeaver
+(delivers data)  →  (stores data)  ←    (shows data)
+
+PostgreSQL is the single source of truth — everything reads and writes to it. 
+SQLAlchemy and DBeaver are just two different ways to interact with the same data:
+- SQLAlchemy — talks to PostgreSQL from your Python code
+- DBeaver — talks to PostgreSQL from a visual interface

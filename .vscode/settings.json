@@ -1,0 +1,15 @@
+{
+  "sqltools.connections": [
+    {
+      "ssh": "Disabled",
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 5432,
+      "driver": "PostgreSQL",
+      "name": "task_manager",
+      "database": "task_manager",
+      "username": "postgres",
+      "password": "danoninoebun1"
+    }
+  ]
+}

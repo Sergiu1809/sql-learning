@@ -91,7 +91,7 @@ CREATE TABLE tasks (
     id SERIAL NUMBER KEY,
     title VARCHAR(200) NOT NULL,
     completed BOOLEAN DEFAULT FALSE,
-    user_id INTEGER REFERENCES user(id) -- foreign key
+    user_id INTEGER REFERENCES users(id) -- foreign key
 );
 
 -- insert tasks
